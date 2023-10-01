@@ -47,11 +47,11 @@ chart_data = dict(filter(all_years_data_is_available, chart_data.items()))
 for i in chart_data.keys():
     print(i)
 
-# for subject, points in chart_data.items():
-#     if len(points)==4:
-#         plt.plot([2019, 2020, 2021, 2022], points, label=subject)
-#
-#
-# plt.legend()
-# plt.show()
+for subject, points in chart_data.items():
+    if len(points)==4:
+        plt.plot([2019, 2020, 2021, 2022], points, label=subject)
+
+
+plt.legend()
+plt.show()
 
